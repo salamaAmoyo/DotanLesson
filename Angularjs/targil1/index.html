@@ -1,0 +1,18 @@
+<html ng-app="app">
+
+<head></head>
+
+<body>
+	<div ng-controller="mainCtrl as mc">
+		<ul>
+			<li ng-click="mc.toggle('fName',mc.person.fName)">{{mc.person.fName}}</li>
+			<li ng-click="mc.toggle('1Name',mc.person.1Name)">{{mc.person.lName}}</li>
+			<li ng-click="mc.toggle('fName',mc.person.fName)">{{mc.person.address}}</li>
+			<li><img ng-src="img/{{mc.person.img}}"/></li>
+		</ul>
+	</div>
+	<script src="node_modules/angular/angular.js"></script>
+	<script src="app/config.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+</head>
+<body>
+     <div ng-controller="mainCtrl as passport">
+      <div style="float:left;"><img src="{{passport.id.src}}" style="height:50px;width:50px;"/></div>      
+        <div ng-click="passport.toggleFname();"><span style="color:blue;">FirstName:</span>{{passport.id.firstName}}</div>
+        <div><span style="color:blue;">LastName:</span>{{passport.id.lastName}}</div>
+        <div><span style="color:blue;">Gender:</span>{{passport.id.gender}}</div>  
+    </div>
+ <script src="node_modules/angular/angular.js"></script> 
+     <script src="app2.js"></script>
+</body>
+</html>
